@@ -6,7 +6,7 @@ const NAV_SECTIONS = [
   {
     title: "Method",
     items: [
-      { id: "global-method", label: "Global Method", path: "#/global-method", status: "ready" },
+      { id: "global-method", label: "The Method", path: "#/global-method", status: "ready" },
     ],
   },
   {

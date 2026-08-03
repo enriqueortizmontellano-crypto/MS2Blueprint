@@ -175,7 +175,7 @@ function IB1() {
           <a href="#/global-method" className="text-teal-600 underline hover:text-teal-700">
             5-step method
           </a>{" "}
-          exactly as described on the Global Method page.
+          exactly as described on The Method page.
         </p>
         <p className="mt-3 text-slate-600 leading-relaxed">
           <span className="font-semibold text-navy-900">Step 1 connection:</span> Immunology and pharm PK/PD show up
@@ -438,6 +438,22 @@ function IB1() {
             </a>
           </li>
         </ul>
+        <div className="mt-4 pt-4 border-t border-slate-200">
+          <p className="text-sm text-slate-600 mb-2">
+            <span className="font-semibold text-navy-900">The matching Anki deck.</span> This covers Mehlman's PDFs
+            across all subjects, not just IB1 — import it once and it carries you through every block. Unsuspend
+            only the Immunology and Pathology cards for this block; leave the rest suspended until their block
+            comes up.
+          </p>
+          <a
+            href="./Mehlman-PDFs-Anki.apkg"
+            target="_blank"
+            rel="noreferrer"
+            className="text-teal-600 underline hover:text-teal-700 text-sm font-semibold"
+          >
+            Download Mehlman PDFs Anki deck (.apkg)
+          </a>
+        </div>
       </Collapsible>
 
       {/* Checklist */}

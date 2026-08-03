@@ -13,7 +13,7 @@ function BlockPage({ blockId }) {
         This section hasn't been built yet. We're going block by block — check back once it's live.
       </p>
       <a href="#/global-method" className="inline-block mt-6 text-teal-600 font-semibold hover:text-teal-700">
-        ← Back to the Global Method
+        ← Back to The Method
       </a>
     </div>
   );

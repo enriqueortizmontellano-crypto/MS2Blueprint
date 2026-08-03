@@ -31,7 +31,7 @@ function SidebarContent({ currentPath, onNavigate }) {
     <div className="flex flex-col h-full">
       <div className="px-4 pt-6 pb-4">
         <p className="text-[11px] uppercase tracking-widest text-teal-400 font-bold">UPR SOM · Class of 2028</p>
-        <h1 className="text-lg font-bold text-white mt-1 leading-tight">MS2 Survival Guide</h1>
+        <h1 className="text-lg font-bold text-white mt-1 leading-tight">MS2 Blueprint</h1>
         <p className="text-xs text-slate-400 mt-1">Built by Enrique Ortiz de Montellano Rubio</p>
       </div>
       <nav className="flex-1 overflow-y-auto sidebar-scroll px-3 pb-6 space-y-5">
@@ -126,7 +126,7 @@ function Layout({ currentPath, onNavigate, children }) {
         <main className="flex-1 px-4 sm:px-6 lg:px-10 py-6 sm:py-10 max-w-4xl w-full mx-auto">{children}</main>
 
         <footer className="px-4 sm:px-6 lg:px-10 py-6 text-center text-xs text-slate-400 border-t border-slate-100">
-          UPR SOM MS2 Survival Guide — built section by section. Content and method by Enrique Ortiz de Montellano Rubio.
+          UPR SOM MS2 Blueprint — built section by section. Content and method by Enrique Ortiz de Montellano Rubio.
         </footer>
       </div>
     </div>

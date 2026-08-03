@@ -224,9 +224,9 @@ function GlobalMethod() {
     <div className="space-y-10">
       {/* Header */}
       <div>
-        <p className="text-teal-600 font-semibold text-sm uppercase tracking-widest mb-2">The Global Method</p>
+        <p className="text-teal-600 font-semibold text-sm uppercase tracking-widest mb-2">The Method</p>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
-          How to actually run MS2 — the system, not the vibes
+          How to actually run MS2
         </h1>
         <p className="mt-4 text-lg text-slate-600 leading-relaxed">
           This page is the foundation for every block in this guide. It's the exact method used to hit a 4.0 in MS2, strong
