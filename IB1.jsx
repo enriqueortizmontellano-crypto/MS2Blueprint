@@ -397,7 +397,7 @@ function IB1() {
           </li>
         </ul>
         <a
-          href="./resources/anki/IB1-HY-Custom-Cards.apkg"
+          href="./IB1-HY-Custom-Cards.apkg"
           target="_blank"
           rel="noreferrer"
           className="text-teal-600 underline hover:text-teal-700 text-sm font-semibold"
@@ -419,7 +419,7 @@ function IB1() {
         <ul className="list-disc pl-5 space-y-1 text-sm text-slate-600">
           <li>
             <a
-              href="./resources/mehlman/HY-Immunology.pdf"
+              href="./HY-Immunology.pdf"
               target="_blank"
               rel="noreferrer"
               className="text-teal-600 underline hover:text-teal-700"
@@ -429,7 +429,7 @@ function IB1() {
           </li>
           <li>
             <a
-              href="./resources/mehlman/HY-Pathology.pdf"
+              href="./HY-Pathology.pdf"
               target="_blank"
               rel="noreferrer"
               className="text-teal-600 underline hover:text-teal-700"
