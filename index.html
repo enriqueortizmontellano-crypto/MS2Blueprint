@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UPR MS2 Survival Guide</title>
+
+    <!-- Tailwind (CDN build, no compile step needed) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: {
+                900: '#0f2438',
+                800: '#16344f',
+                700: '#1d4566',
+                600: '#27567d',
+              },
+              teal: {
+                600: '#0d9488',
+                500: '#14b8a6',
+              },
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- React + ReactDOM -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+    <!-- Babel standalone: lets the browser transform JSX/ESM on the fly, no build step -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-800 font-sans antialiased">
+    <div id="root"></div>
+
+    <script type="text/babel" data-presets="react" src="./src/data/siteData.js?v=ib1-9"></script>
+    <script type="text/babel" data-presets="react" src="./src/components/Icons.jsx?v=ib1-9"></script>
+    <script type="text/babel" data-presets="react" src="./src/components/Collapsible.jsx?v=ib1-9"></script>
+    <script type="text/babel" data-presets="react" src="./src/components/Checklist.jsx?v=ib1-9"></script>
+    <script type="text/babel" data-presets="react" src="./src/components/Layout.jsx?v=ib1-9"></script>
+    <script type="text/babel" data-presets="react" src="./src/pages/GlobalMethod.jsx?v=ib1-9"></script>
+    <script type="text/babel" data-presets="react" src="./src/pages/BlockPage.jsx?v=ib1-9"></script>
+    <script type="text/babel" data-presets="react" src="./src/pages/IB1.jsx?v=ib1-9"></script>
+    <script type="text/babel" data-presets="react" src="./src/App.jsx?v=ib1-9"></script>
+  </body>
+</html>
