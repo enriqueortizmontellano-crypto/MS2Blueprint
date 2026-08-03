@@ -37,22 +37,30 @@
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 
-    <!-- Babel standalone: lets the browser transform JSX/ESM on the fly, no build step -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Babel standalone: lets the browser transform JSX on the fly, no build step -->
+    <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+    <script>
+      // Force the CLASSIC JSX runtime. The default "automatic" runtime emits
+      // `import { jsx } from "react/jsx-runtime"`, which cannot run in a classic
+      // <script> tag and leaves the page blank.
+      Babel.registerPreset("react-classic", {
+        presets: [[Babel.availablePresets["react"], { runtime: "classic" }]],
+      });
+    </script>
 
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="bg-slate-50 text-slate-800 font-sans antialiased">
     <div id="root"></div>
 
-    <script type="text/babel" data-presets="react" src="./siteData.js?v=gh1"></script>
-    <script type="text/babel" data-presets="react" src="./Icons.jsx?v=gh1"></script>
-    <script type="text/babel" data-presets="react" src="./Collapsible.jsx?v=gh1"></script>
-    <script type="text/babel" data-presets="react" src="./Checklist.jsx?v=gh1"></script>
-    <script type="text/babel" data-presets="react" src="./Layout.jsx?v=gh1"></script>
-    <script type="text/babel" data-presets="react" src="./GlobalMethod.jsx?v=gh1"></script>
-    <script type="text/babel" data-presets="react" src="./BlockPage.jsx?v=gh1"></script>
-    <script type="text/babel" data-presets="react" src="./IB1.jsx?v=gh1"></script>
-    <script type="text/babel" data-presets="react" src="./App.jsx?v=gh1"></script>
+    <script type="text/babel" data-presets="react-classic" src="./siteData.js?v=gh2"></script>
+    <script type="text/babel" data-presets="react-classic" src="./Icons.jsx?v=gh2"></script>
+    <script type="text/babel" data-presets="react-classic" src="./Collapsible.jsx?v=gh2"></script>
+    <script type="text/babel" data-presets="react-classic" src="./Checklist.jsx?v=gh2"></script>
+    <script type="text/babel" data-presets="react-classic" src="./Layout.jsx?v=gh2"></script>
+    <script type="text/babel" data-presets="react-classic" src="./GlobalMethod.jsx?v=gh2"></script>
+    <script type="text/babel" data-presets="react-classic" src="./BlockPage.jsx?v=gh2"></script>
+    <script type="text/babel" data-presets="react-classic" src="./IB1.jsx?v=gh2"></script>
+    <script type="text/babel" data-presets="react-classic" src="./App.jsx?v=gh2"></script>
   </body>
 </html>
