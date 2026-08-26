@@ -13,7 +13,7 @@ const NAV_SECTIONS = [
     title: "Blocks",
     items: [
       { id: "ib1", label: "IB1 — Immuno + Intro Path + Pharm Foundations", path: "#/block/ib1", status: "ready" },
-      { id: "ib2", label: "IB2 — Path Escalation + Pharm Escalation", path: "#/block/ib2", status: "locked" },
+      { id: "ib2", label: "IB2 — Path Escalation + Pharm Escalation", path: "#/block/ib2", status: "ready" },
       { id: "ib3", label: "IB3 — Bacteria, Antibiotics, Antifungals, Mycology", path: "#/block/ib3", status: "locked" },
       { id: "ib4", label: "IB4 — Viruses, Antivirals, Autonomics, Neoplasia", path: "#/block/ib4", status: "locked" },
       { id: "pulm-renal", label: "Pulmonary + Renal", path: "#/block/pulm-renal", status: "locked" },
