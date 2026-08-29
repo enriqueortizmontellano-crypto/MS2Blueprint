@@ -170,8 +170,23 @@ const IB2_OTHER_RESOURCES = [
       "Toxicology — cyanide, methanol, ethylene glycol, carbon monoxide",
       "Organophosphates, fire-related toxicity, toxic alcohols",
     ],
-    note: "BootCamp doesn't cover these. Pixo is the fill-in — treat it as a gap-filler, not a core resource.",
+    note: "BootCamp doesn't cover these. Pixo is optional here — the custom card deck below is the better fill for this gap, with 205 cards across heavy metals, alcohols, and environmental toxicity.",
   },
+];
+
+const IB2_CUSTOM_DECKS = [
+  { name: "PATH", count: 271 },
+  { name: "Pharm → Extra", count: 63 },
+];
+
+const IB2_ULTRA_HY = [
+  { name: "Heavy Metals", count: 130 },
+  { name: "Anesthetics", count: 74 },
+  { name: "Opioids", count: 51 },
+  { name: "Alcohols", count: 47 },
+  { name: "Non-Opioids", count: 44 },
+  { name: "Environmental Toxicity", count: 28 },
+  { name: "Integrative Deck", count: 23 },
 ];
 
 const IB2_CHECKLIST_ITEMS = [
@@ -188,6 +203,7 @@ const IB2_CHECKLIST_ITEMS = [
   { id: "sketchy", text: "Sketchy: Opioids/Naloxone/Naltrexone + IV Anesthetics, Inhaled Anesthetics & Dantrolene, Local Anesthetics" },
   { id: "bnb", text: "Boards and Beyond: the complete anesthesia section" },
   { id: "pathoma", text: "Pathoma: Primary Immunodeficiency, Autoimmune Disorders, Thrombosis, Embolism" },
+  { id: "custom-cards", text: "Import the IB2 Custom Cards deck (731 cards) and unsuspend alongside AnKing" },
   { id: "anki-unsuspend", text: "Unsuspend the matching AnKing cards for every video as you finish it — not in one batch at the end" },
   { id: "daily-anki", text: "Daily Anki reviews — no exceptions, no pile-up" },
   { id: "qbank-week", text: "Final week: suspend new cards, stop new content, grind UWorld + Rx in tutor mode" },
@@ -439,14 +455,47 @@ function IB2() {
       {/* Custom cards */}
       <Collapsible
         title="Custom High-Yield Cards"
-        subtitle="Enrique's additional cards for this block"
-        badge="TBD"
-        tone="default"
+        subtitle="Enrique's additional cards for this block — 731 cards across Path and Pharm"
+        tone="teal"
       >
-        <p className="text-sm text-slate-600">
-          Upload the IB2 custom deck and this section gets the same treatment as IB1 — subdeck breakdown, card
-          counts, and a download link.
+        <p className="text-sm text-slate-600 mb-3">
+          The extra layer on top of AnKing — cards built from lecture, BootCamp, and Qbank misses. Import the deck
+          below; it lands as{" "}
+          <code className="text-xs bg-slate-100 px-1 py-0.5 rounded break-all">MS2::HY Enrique's Custom Cards::IB2</code>{" "}
+          with subdecks already organized. Unsuspend and study these alongside your AnKing reviews — don't treat them
+          as a separate pile.
         </p>
+        <ul className="list-disc pl-5 space-y-1 text-sm text-slate-600 mb-3">
+          {IB2_CUSTOM_DECKS.map((d) => (
+            <li key={d.name}>
+              <span className="font-semibold text-navy-900">{d.name}</span> — {d.count} cards
+            </li>
+          ))}
+          <li>
+            <span className="font-semibold text-navy-900">Pharm → Ultra HY Pharm IB2</span> — 397 cards across seven
+            subdecks:
+            <ul className="list-disc pl-5 mt-1 space-y-0.5">
+              {IB2_ULTRA_HY.map((d) => (
+                <li key={d.name}>
+                  {d.name} ({d.count})
+                </li>
+              ))}
+            </ul>
+          </li>
+        </ul>
+        <p className="text-sm text-slate-600 mb-3">
+          <span className="font-semibold text-navy-900">Worth noticing:</span> Heavy Metals, Alcohols, and
+          Environmental Toxicity add up to 205 cards. That's exactly the toxicology material BootCamp doesn't cover.
+          If you were planning to skip that gap, don't — this deck is where it lives.
+        </p>
+        <a
+          href="https://github.com/enriqueortizmontellano-crypto/MS2Blueprint/releases/download/decks/IB2-HY-Custom-Cards.apkg"
+          target="_blank"
+          rel="noreferrer"
+          className="text-teal-600 underline hover:text-teal-700 text-sm font-semibold"
+        >
+          Download IB2 Custom Cards (.apkg, 731 cards)
+        </a>
       </Collapsible>
 
       {/* Final week resources */}
