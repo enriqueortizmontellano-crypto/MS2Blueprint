@@ -1,4 +1,4 @@
-// test// IB2 — Pathology Escalation + Pharm Escalation
+// IB2 — Pathology Escalation + Pharm Escalation
 // Block 2 of 10 in the sequence.
 // Organized by BootCamp chapter → video. Anything already watched in IB1 is marked optional.
 
@@ -489,7 +489,7 @@ function IB2() {
           If you were planning to skip that gap, don't — this deck is where it lives.
         </p>
         <a
-          href="https://github.com/enriqueortizmontellano-crypto/MS2Blueprint/releases/download/decks/IB2-HY-Custom-Cards.apkg"
+          href="https://drive.google.com/file/d/1PYZtNdoEK0x2ZoNV7M-iimJ5sbndGb0t/view?usp=drive_link"
           target="_blank"
           rel="noreferrer"
           className="text-teal-600 underline hover:text-teal-700 text-sm font-semibold"
