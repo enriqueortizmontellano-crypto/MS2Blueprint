@@ -160,7 +160,7 @@ const IB2_OTHER_RESOURCES = [
     scope: "Two chapters",
     items: [
       "Inflammation, Inflammatory Disorders, and Healing → Primary Immunodeficiency, Autoimmune Disorders",
-      "Hemostasis and Related Disorders → Thrombosis, Embolism",
+      "Hemostasis (Ch.4) → 03 Other Disorders of Hemostasis, 04 Thrombosis, 05 Embolism — parts 03–05 only",
     ],
   },
   {
@@ -187,6 +187,31 @@ const IB2_ULTRA_HY = [
   { name: "Non-Opioids", count: 44 },
   { name: "Environmental Toxicity", count: 28 },
   { name: "Integrative Deck", count: 23 },
+];
+
+const UWORLD_TOPICS = [
+  { topic: "Shock", ids: "19281, 15240, 1782, 15241, 13979, 2101, 2102, 19335, 1529, 19284, 19280, 96, 20259, 6811, 21505" },
+  { topic: "Hypersensitivity Disorders", ids: "876, 21258, 21294, 11662, 21462, 15695, 508, 18707, 20586, 544, 1133, 741, 20701, 106668, 20767, 18764, 20715, 17600, 20698, 2068" },
+  { topic: "Hypercoagulable States", ids: "751, 1088, 465, 1292, 1880, 1879, 742, 14959" },
+  { topic: "Blood Groups", ids: "1130, 8261, 1683, 747, 545, 17780, 11780" },
+  { topic: "Transplants", ids: "16141, 1613, 535, 546, 534, 744, 568, 20771, 569" },
+  { topic: "Immunosuppressive Drugs", ids: "11786, 720, 8523, 1155" },
+  { topic: "Systemic Lupus Erythematosus", ids: "15619, 875, 1505" },
+  { topic: "Scleroderma", ids: "284, 15564, 340, 19446, 15563" },
+  { topic: "Sjögren's Syndrome", ids: "15557" },
+  { topic: "Rheumatoid Arthritis", ids: "15629, 15627, 754, 11821, 11793, 14677, 719" },
+  { topic: "Glucocorticoids and NSAIDs", ids: "7656, 716, 15172, 1049, 1800, 7792, 18808, 18802" },
+  { topic: "Opioids", ids: "774, 1353, 18630, 1287, 18541, 1256, 15608, 16052, 18644, 11829, 106226, 13994, 15276, 776, 1257" },
+  { topic: "General Anesthesia", ids: "854, 659, 12504, 18733, 18732, 851, 660, 856, 855" },
+  { topic: "Local Anesthesia", ids: "18830, 15712" },
+  { topic: "Neuromuscular Blockers", ids: "1212, 8481, 18755, 18735" },
+  { topic: "Alcohol and CNS Depressants", ids: "15738, 870, 18636, 11787, 106307, 13907, 350, 11577" },
+  { topic: "Pulmonary Embolism", ids: "197, 1876, 15070, 12184, 529, 1538, 106231" },
+  { topic: "Pleural Disease", ids: "490, 1695, 15370" },
+  { topic: "Inflammation Principles", ids: "20174, 15430, 7614, 1881, 20176, 15420" },
+  { topic: "Acute and Chronic Inflammation", ids: "1220, 21420, 1218, 406" },
+  { topic: "Acute Pancreatitis", ids: "435, 439, 486, 440, 441, 433, 434" },
+  { topic: "Rhabdomyolysis", ids: "15217, 15218" },
 ];
 
 const IB2_CHECKLIST_ITEMS = [
@@ -433,22 +458,46 @@ function IB2() {
           Same rule as IB1: unsuspend the matching AnKing cards for each video the day you watch it, never in one
           batch at the end. IB2 pulls from eleven BootCamp chapters, so the tag list is longer and more scattered.
         </p>
+        <div className="mb-4">
+          <h4 className="font-semibold text-navy-800 mb-1 text-sm">Pathoma — Hemostasis (Ch.4), parts 03–05 only</h4>
+          <ul className="list-disc pl-5 space-y-1 text-sm text-slate-600">
+            <li><code className="text-xs bg-slate-100 px-1 py-0.5 rounded break-all">#AK_Step1_v12::#Pathoma::04_Hemostasis::03_Other_Disorders_of_Hemostasis</code></li>
+            <li><code className="text-xs bg-slate-100 px-1 py-0.5 rounded break-all">#AK_Step1_v12::#Pathoma::04_Hemostasis::04_Thrombosis</code></li>
+            <li><code className="text-xs bg-slate-100 px-1 py-0.5 rounded break-all">#AK_Step1_v12::#Pathoma::04_Hemostasis::05_Embolism</code></li>
+          </ul>
+          <p className="text-xs text-slate-500 mt-1.5 italic">
+            Leave 01_Primary_Hemostasis and 02_Secondary_Hemostasis suspended — those belong to the Heme block.
+          </p>
+        </div>
         <p className="text-sm text-slate-600">
-          Exact tag strings and card counts still need pulling from the Anki browser — send screenshots the same way
-          you did for IB1 and this section gets built out.
+          The BootCamp tag strings and card counts still need pulling from the Anki browser — send screenshots the
+          same way you did for IB1 and the rest of this section gets built out.
         </p>
       </Collapsible>
 
       {/* Qbank filters */}
       <Collapsible
-        title="Qbank Filters"
-        subtitle="Final week — UWorld + Rx, in tutor mode"
-        badge="TBD"
-        tone="default"
+        title="Qbank — UWorld Question IDs"
+        subtitle="154 questions, by topic — final week, tutor mode"
+        tone="teal"
       >
-        <p className="text-sm text-slate-600">
-          Same structure as IB1: this is the final-week grind (Step 6), not something you run throughout the block.
-          Filter screenshots needed to fill this in.
+        <p className="text-sm text-slate-600 mb-3">
+          This is the final-week grind (Step 6), not something you run throughout the block. Rather than filtering by
+          system, these are the exact question IDs for IB2. In UWorld, create a custom test and paste the IDs into the{" "}
+          <span className="font-semibold text-navy-900">search by QID</span> field, or work topic by topic in the order
+          below.
+        </p>
+        <div className="space-y-2.5">
+          {UWORLD_TOPICS.map((t) => (
+            <div key={t.topic}>
+              <h4 className="font-semibold text-navy-800 text-sm">{t.topic}</h4>
+              <p className="text-xs text-slate-600 font-mono break-all leading-relaxed">{t.ids}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-xs text-slate-500 mt-4 pt-3 border-t border-slate-200">
+          <span className="font-semibold">Rx:</span> no verified IB2 filter set yet. UWorld IDs above are the
+          priority — do those first.
         </p>
       </Collapsible>
 
