@@ -199,7 +199,6 @@ const UWORLD_TOPICS = [
   { topic: "Systemic Lupus Erythematosus", ids: "15619, 875, 1505" },
   { topic: "Scleroderma", ids: "284, 15564, 340, 19446, 15563" },
   { topic: "Sjögren's Syndrome", ids: "15557" },
-  { topic: "Rheumatoid Arthritis", ids: "15629, 15627, 754, 11821, 11793, 14677, 719" },
   { topic: "Glucocorticoids and NSAIDs", ids: "7656, 716, 15172, 1049, 1800, 7792, 18808, 18802" },
   { topic: "Opioids", ids: "774, 1353, 18630, 1287, 18541, 1256, 15608, 16052, 18644, 11829, 106226, 13994, 15276, 776, 1257" },
   { topic: "General Anesthesia", ids: "854, 659, 12504, 18733, 18732, 851, 660, 856, 855" },
@@ -210,8 +209,8 @@ const UWORLD_TOPICS = [
   { topic: "Pleural Disease", ids: "490, 1695, 15370" },
   { topic: "Inflammation Principles", ids: "20174, 15430, 7614, 1881, 20176, 15420" },
   { topic: "Acute and Chronic Inflammation", ids: "1220, 21420, 1218, 406" },
-  { topic: "Acute Pancreatitis", ids: "435, 439, 486, 440, 441, 433, 434" },
-  { topic: "Rhabdomyolysis", ids: "15217, 15218" },
+  { topic: "Acute Pancreatitis", ids: "435, 439, 486, 440, 441, 433, 434", note: "may be out of scope for the block exam — included because pancreatitis is a classic DIC trigger, which is in scope" },
+  { topic: "Rhabdomyolysis", ids: "15217, 15218", note: "may be out of scope for the block exam — ties into intrarenal AKI" },
 ];
 
 const IB2_CHECKLIST_ITEMS = [
@@ -478,7 +477,7 @@ function IB2() {
       {/* Qbank filters */}
       <Collapsible
         title="Qbank — UWorld Question IDs"
-        subtitle="154 questions, by topic — final week, tutor mode"
+        subtitle="147 questions, by topic — final week, tutor mode"
         tone="teal"
       >
         <p className="text-sm text-slate-600 mb-3">
@@ -490,7 +489,15 @@ function IB2() {
         <div className="space-y-2.5">
           {UWORLD_TOPICS.map((t) => (
             <div key={t.topic}>
-              <h4 className="font-semibold text-navy-800 text-sm">{t.topic}</h4>
+              <h4 className="font-semibold text-navy-800 text-sm">
+                {t.topic}
+                {t.note ? (
+                  <span className="ml-2 text-[11px] font-semibold px-1.5 py-0.5 rounded bg-amber-50 text-amber-700">
+                    check scope
+                  </span>
+                ) : null}
+              </h4>
+              {t.note ? <p className="text-xs text-slate-500 italic mb-0.5">{t.note}</p> : null}
               <p className="text-xs text-slate-600 font-mono break-all leading-relaxed">{t.ids}</p>
             </div>
           ))}
