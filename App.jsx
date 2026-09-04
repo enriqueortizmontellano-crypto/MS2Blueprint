@@ -24,6 +24,8 @@ function App() {
     content = <IB1 />;
   } else if (path === "#/block/ib2") {
     content = <IB2 />;
+  } else if (path === "#/block/ib3") {
+    content = <IB3 />;
   } else if (path.startsWith("#/block/")) {
     content = <BlockPage blockId={path.replace("#/block/", "")} />;
   } else {
