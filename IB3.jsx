@@ -75,7 +75,7 @@ const IB3_BOOTCAMP = [
       { title: "Empiric Antibiotics in GI, Skin, Bone, and Hematogenous Infections", time: "7:44" },
       { title: "Board-style Question Breakdown", time: "14:15" },
     ],
-    footnote: "4.5 hours is the single biggest time commitment in the block. Worth every minute — this section is exceptional for Step 1.",
+    footnote: "This is the one place in IB3 where you get a choice: this chapter OR Sketchy Pharm antibiotics. Pick one and commit — there is not time for both.",
   },
 ];
 const IB3_SKETCHY_BACTERIA = [
@@ -109,9 +109,8 @@ const IB3_CHECKLIST_ITEMS = [
   { id: "bc-fundamentals", text: "BootCamp Micro 1 — Fundamentals of Bacteriology: all 9 videos" },
   { id: "bc-genetics", text: "BootCamp Micro 2 — Bacterial Genetics: all 6 videos" },
   { id: "bc-toxins", text: "BootCamp Micro 3 — Bacterial Toxins: all 5 videos (2 are IB2 review)" },
-  { id: "bc-abx", text: "BootCamp Micro 36 — Antibiotics: all 28 videos" },
+  { id: "abx", text: "Antibiotics — pick ONE: BootCamp Micro 36 (28 videos) or Sketchy Pharm antibiotics. Not both." },
   { id: "sk-bacteria", text: "Sketchy Bacteria: all 55 lessons across the 10 sections" },
-  { id: "sk-unit-test", text: "Sketchy Bacteria Unit Test" },
   { id: "sk-fungi", text: "Sketchy Fungi — Opportunistic Fungal Infections: all 5 videos" },
   { id: "sk-antifungals", text: "Sketchy Pharm — Antifungals: all 3 videos" },
   { id: "anki-unsuspend", text: "Unsuspend the matching AnKing cards for every video as you finish it — not in one batch at the end" },
@@ -175,8 +174,7 @@ function IB3() {
             Antibiotics chapter.
           </li>
           <li>
-            <span className="font-semibold text-navy-900">Sketchy Bacteria</span> — all 55 lessons, plus the unit
-            test.
+            <span className="font-semibold text-navy-900">Sketchy Bacteria</span> — all 55 lessons.
           </li>
           <li>
             <span className="font-semibold text-navy-900">Sketchy Fungi</span> — the Opportunistic Fungal Infections
@@ -189,27 +187,43 @@ function IB3() {
         <p className="text-sm text-slate-600 mt-3">
           That is it. Nothing else to hunt for.
         </p>
+        <p className="text-sm text-slate-600 mt-3">
+          <span className="font-semibold text-navy-900">All of the above is non-negotiable</span> — the three
+          BootCamp micro chapters, all 55 Sketchy bacteria, the opportunistic fungi, the antifungals. The only
+          decision you make in this block is which resource you use for antibiotics.
+        </p>
       </Collapsible>
 
-      {/* Antibiotics escape hatch */}
+      {/* The one choice */}
       <Collapsible
-        title="If the Antibiotics Chapter Feels Like Too Much"
-        subtitle="An honest alternative — and why I would not take it"
+        title="Antibiotics — The One Choice You Get"
+        subtitle="BootCamp or Sketchy Pharm. One of them. Not both."
+        defaultOpen
         tone="teal"
       >
         <p className="text-sm text-slate-600 mb-3">
-          BootCamp Antibiotics is 28 videos and four and a half hours. It is the biggest single block of content in
-          IB3 and it is reasonable to look at that number and flinch.
+          Everything else in this block is fixed. Antibiotics is the single place where you pick a lane — and you
+          pick <span className="font-semibold text-navy-900">one</span>. Doing both is not a stretch goal, it is a
+          way to run out of time and finish neither.
         </p>
-        <p className="text-sm text-slate-600 mb-3">
-          <span className="font-semibold text-navy-900">The alternative:</span> Sketchy Pharm has an antibiotics
-          section that covers the same drug classes in less time. If you are drowning, take it. A completed Sketchy
-          antibiotics section beats a half-finished BootCamp one.
-        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-3">
+          <div>
+            <h4 className="font-semibold text-navy-800 mb-1 text-sm">BootCamp Micro 36 — Antibiotics</h4>
+            <p className="text-xs text-slate-600">
+              28 videos, 4h 33m. Deeper on mechanism and coverage logic. What I used.
+            </p>
+          </div>
+          <div>
+            <h4 className="font-semibold text-navy-800 mb-1 text-sm">Sketchy Pharm — Antibiotics</h4>
+            <p className="text-xs text-slate-600">
+              Faster, image-based, same drug classes. Fine if the BootCamp hours will not fit.
+            </p>
+          </div>
+        </div>
         <p className="text-sm text-slate-600">
-          <span className="font-semibold text-navy-900">But if you can afford the hours, do BootCamp.</span> That
-          chapter is genuinely excellent — the mechanism and coverage explanations are the best I used, and it paid
-          off directly on Step. This is the one place in IB3 where I would spend extra time rather than save it.
+          <span className="font-semibold text-navy-900">My pick is BootCamp.</span> That chapter is genuinely
+          excellent and it paid off directly on Step. But a finished Sketchy section beats a half-finished BootCamp
+          one, so choose honestly based on the time you actually have — then do not look back.
         </p>
       </Collapsible>
       {/* BootCamp */}
@@ -261,7 +275,7 @@ function IB3() {
           ))}
         </ul>
         <p className="text-xs text-slate-500 italic mb-5">
-          Finish with the Bacteria Unit Test — 56 lessons total.
+          All 55. Not a subset, not the high-yield ones — all of them.
         </p>
 
         <h4 className="font-semibold text-navy-800 mb-1">Fungi — Opportunistic Fungal Infections only</h4>
