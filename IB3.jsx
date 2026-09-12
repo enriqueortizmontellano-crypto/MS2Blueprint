@@ -105,6 +105,12 @@ const IB3_SKETCHY_ANTIFUNGALS = [
   { title: "Griseofulvin, Terbinafine, Echinocandins", time: "9m" },
 ];
 
+const IB3_CUSTOM_DECKS = [
+  { name: "Scenario–bacteria", count: 109 },
+  { name: "IB3 (top level)", count: 33 },
+  { name: "Scenario–Antimicrobials", count: 24 },
+];
+
 const IB3_CHECKLIST_ITEMS = [
   { id: "bc-fundamentals", text: "BootCamp Micro 1 — Fundamentals of Bacteriology: all 9 videos" },
   { id: "bc-genetics", text: "BootCamp Micro 2 — Bacterial Genetics: all 6 videos" },
@@ -113,6 +119,7 @@ const IB3_CHECKLIST_ITEMS = [
   { id: "sk-bacteria", text: "Sketchy Bacteria: all 55 lessons across the 10 sections" },
   { id: "sk-fungi", text: "Sketchy Fungi — Opportunistic Fungal Infections: all 5 videos" },
   { id: "sk-antifungals", text: "Sketchy Pharm — Antifungals: all 3 videos" },
+  { id: "custom-cards", text: "Import the IB3 Custom Cards deck (166 cards) and unsuspend alongside AnKing" },
   { id: "anki-unsuspend", text: "Unsuspend the matching AnKing cards for every video as you finish it — not in one batch at the end" },
   { id: "daily-anki", text: "Daily Anki reviews — no exceptions, no pile-up" },
   { id: "qbank-week", text: "Final week: suspend new cards, stop new content, grind UWorld + Rx in tutor mode" },
@@ -336,14 +343,35 @@ function IB3() {
       {/* Custom cards */}
       <Collapsible
         title="Custom High-Yield Cards"
-        subtitle="Enrique's additional cards for this block"
-        badge="TBD"
-        tone="default"
+        subtitle="Enrique's additional cards for this block — 166 cards, scenario-based"
+        tone="teal"
       >
-        <p className="text-sm text-slate-600">
-          Upload the IB3 custom deck and this section gets the same treatment as IB1 and IB2 — subdeck breakdown,
-          card counts, and a download link.
+        <p className="text-sm text-slate-600 mb-3">
+          Smaller than the IB1 and IB2 decks, and deliberately so. Sketchy and AnKing already carry the organism
+          facts for this block — these cards are built around{" "}
+          <span className="font-semibold text-navy-900">scenarios</span>, which is how micro actually gets tested:
+          a stem describes a patient and you have to land on the bug or the drug.
         </p>
+        <ul className="list-disc pl-5 space-y-1 text-sm text-slate-600 mb-3">
+          {IB3_CUSTOM_DECKS.map((d) => (
+            <li key={d.name}>
+              <span className="font-semibold text-navy-900">{d.name}</span> — {d.count} cards
+            </li>
+          ))}
+        </ul>
+        <p className="text-sm text-slate-600 mb-3">
+          Import it; it lands as{" "}
+          <code className="text-xs bg-slate-100 px-1 py-0.5 rounded break-all">MS2::HY Enrique's Custom Cards::IB3</code>{" "}
+          with the subdecks already organized. Run these alongside your AnKing reviews, not as a separate pile.
+        </p>
+        <a
+          href="./IB3-HY-Custom-Cards.apkg"
+          target="_blank"
+          rel="noreferrer"
+          className="text-teal-600 underline hover:text-teal-700 text-sm font-semibold"
+        >
+          Download IB3 Custom Cards (.apkg, 166 cards)
+        </a>
       </Collapsible>
 
       {/* Mehlman */}
