@@ -524,6 +524,17 @@ function IB4() {
           </li>
           <li>
             <a
+              href="https://drive.google.com/file/d/1pULYm-OeO8-8jd2qiQ2WtGUwOwF7SgsF/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              className="text-teal-600 underline hover:text-teal-700"
+            >
+              Mehlman — High Yield Micro (PDF)
+            </a>{" "}
+            <span className="text-xs text-slate-500">— viruses and antivirals</span>
+          </li>
+          <li>
+            <a
               href="./Mehlman-PDFs-Anki.apkg"
               target="_blank"
               rel="noreferrer"
@@ -535,7 +546,7 @@ function IB4() {
           </li>
         </ul>
         <p className="text-xs text-slate-500 italic">
-          Mehlman HY Micro and HY Pharm also apply to this block — links pending.
+          Mehlman HY Pharm also applies to this block — link pending.
         </p>
       </Collapsible>
 
