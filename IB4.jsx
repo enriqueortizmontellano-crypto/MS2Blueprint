@@ -110,20 +110,17 @@ const IB4_TUMORS = [
   {
     section: "Nephrology → 13. Inflammatory Conditions & Malignancy",
     videos: ["4. Renal Cell Carcinoma (13:28)", "6. Wilm\u2019s Tumor (7:05)", "7. Urothelial Carcinoma (9:26)", "8. Squamous Cell Carcinoma of the Bladder (5:32)"],
-    tier: "semi",
-    note: "Worth doing, but these are the first to cut if the block is burying you.",
+    tier: "optional",
   },
   {
     section: "Endocrinology → 6. Adrenal Glands",
     videos: ["9. Adrenal Neoplasms (11:13)"],
     tier: "optional",
-    note: "Low yield for this block.",
   },
   {
     section: "Reproductive → cancer sections",
     videos: ["Male and female repro cancer videos"],
     tier: "optional",
-    note: "I do not remember this being tested. Listed so you know it exists, not because you need it.",
   },
 ];
 
@@ -147,11 +144,11 @@ function IB4Badge({ status, note }) {
   if (!status) return null;
   const styles = {
     optional: "bg-slate-100 text-slate-500",
-    semi: "bg-amber-50 text-amber-700",
+    semi: "bg-slate-100 text-slate-500",
     hy: "bg-teal-50 text-teal-700",
     required: "bg-teal-50 text-teal-700",
   };
-  const labels = { optional: "optional", semi: "sacrificeable", hy: "high yield", required: "required" };
+  const labels = { optional: "optional", semi: "optional", hy: "high yield", required: "required" };
   return (
     <span className={"ml-2 text-[11px] font-semibold px-1.5 py-0.5 rounded " + styles[status]}>
       {labels[status]}
@@ -208,11 +205,6 @@ function IB4() {
             <span className="font-semibold text-navy-900">Neoplasia is a prerequisite, not a topic.</span> The
             BootCamp principles and Pathoma Ch.3 explain the mechanisms behind every organ-specific tumor video. Do
             them before the tumor list, not after.
-          </li>
-          <li>
-            <span className="font-semibold text-navy-900">If you have to cut, cut in this order:</span> the repro
-            cancer sections, then adrenal neoplasms, then the nephrology tumors. Everything above those is load
-            bearing.
           </li>
         </ul>
       </Collapsible>
@@ -485,29 +477,65 @@ function IB4() {
       <Collapsible
         title="Custom High-Yield Cards"
         subtitle="Includes the BootCamp virus algorithm mnemonics"
-        badge="TBD"
-        tone="default"
+        tone="teal"
       >
-        <p className="text-sm text-slate-600">
-          The IB4 deck includes a custom set built around the virus classification algorithm and mnemonics from
-          BootCamp's Approach to Virology. Upload the deck and this section gets the full breakdown — subdecks, card
-          counts, and a download link.
+        <p className="text-sm text-slate-600 mb-3">
+          The extra layer on top of AnKing. The piece worth calling out: a custom set built around the{" "}
+          <span className="font-semibold text-navy-900">virus classification algorithm and mnemonics</span> from
+          BootCamp's Approach to Virology. If you picked Sketchy for the organisms, these cards are how you still get
+          the algorithm.
         </p>
+        <p className="text-sm text-slate-600 mb-3">
+          Import it; it lands under{" "}
+          <code className="text-xs bg-slate-100 px-1 py-0.5 rounded break-all">MS2::HY Enrique's Custom Cards::IB4</code>{" "}
+          with subdecks already organized. Study these alongside your AnKing reviews, not as a separate pile.
+        </p>
+        <a
+          href="https://drive.google.com/file/d/1HyRFvfHbD9wt8NMyAPBKTrkwcYV26LKZ/view?usp=share_link"
+          target="_blank"
+          rel="noreferrer"
+          className="text-teal-600 underline hover:text-teal-700 text-sm font-semibold"
+        >
+          Download IB4 Custom Cards (.apkg)
+        </a>
       </Collapsible>
 
       {/* Mehlman */}
       <Collapsible
         title="Final-Week Resources — Mehlman High-Yield"
-        subtitle="1-2 days before the exam"
-        badge="TBD"
-        tone="default"
+        subtitle="1-2 days before the exam: read + do the matching Anki cards"
+        tone="teal"
       >
-        <p className="text-sm text-slate-600">
-          The Mehlman Anki deck is already downloadable from the{" "}
-          <a href="#/block/ib1" className="text-teal-600 underline hover:text-teal-700">
-            IB1 page
-          </a>{" "}
-          and covers every block — import it once. Which HY PDFs apply to IB4 still needs confirming.
+        <p className="text-sm text-slate-600 mb-3">
+          The last step of the method. Read these the day or two before the block exam and do Mehlman's matching Anki
+          cards alongside them.
+        </p>
+        <ul className="list-disc pl-5 space-y-1 text-sm text-slate-600 mb-3">
+          <li>
+            <a
+              href="./HY-Pathology.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="text-teal-600 underline hover:text-teal-700"
+            >
+              Mehlman — High Yield Pathology (PDF)
+            </a>{" "}
+            <span className="text-xs text-slate-500">— the neoplasia half of this block</span>
+          </li>
+          <li>
+            <a
+              href="./Mehlman-PDFs-Anki.apkg"
+              target="_blank"
+              rel="noreferrer"
+              className="text-teal-600 underline hover:text-teal-700"
+            >
+              Mehlman PDFs Anki deck (.apkg)
+            </a>{" "}
+            <span className="text-xs text-slate-500">— covers every block, import once</span>
+          </li>
+        </ul>
+        <p className="text-xs text-slate-500 italic">
+          Mehlman HY Micro and HY Pharm also apply to this block — links pending.
         </p>
       </Collapsible>
 
