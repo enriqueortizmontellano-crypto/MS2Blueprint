@@ -134,7 +134,7 @@ const IB4_CHECKLIST_ITEMS = [
   { id: "chemo", text: "Cancer chemo — Cell Cycle Dependent and Independent Drug Targets" },
   { id: "pathoma", text: "Pathoma Chapter 3 — Principles of Neoplasia (all 6 videos)" },
   { id: "tumors-required", text: "Tumor videos — Gastro (large intestine, small intestine, liver) and the full Lung Cancer chapter" },
-  { id: "tumors-semi", text: "Tumor videos — Nephrology: RCC, Wilm\u2019s, Urothelial, SCC of bladder (sacrificeable if short on time)" },
+  { id: "tumors-semi", text: "Tumor videos — Nephrology: RCC, Wilm\u2019s, Urothelial, SCC of bladder (optional)" },
   { id: "anki-unsuspend", text: "Unsuspend the matching AnKing deck for every video listed on this page — as you go, not in one batch" },
   { id: "daily-anki", text: "Daily Anki reviews — no exceptions, no pile-up" },
   { id: "qbank-week", text: "Final week: suspend new cards, stop new content, grind UWorld + Rx in tutor mode" },
