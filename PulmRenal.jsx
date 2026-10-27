@@ -445,6 +445,30 @@ function PulmRenal() {
           the most stable — the content barely moves. What you build here is still load-bearing in Dedicated. The
           nephron transporters and the A-a gradient are worth over-learning.
         </p>
+
+        <div className="mt-4 rounded-lg bg-teal-50 border border-teal-200 p-4">
+          <h3 className="font-semibold text-navy-900 mb-1 text-sm">
+            Anatomy, embryology and physiology are in scope. On this exam.
+          </h3>
+          <p className="text-sm text-slate-700">
+            Not &quot;background,&quot; not &quot;MS1 stuff,&quot; not optional. Lung and kidney embryology,
+            thoracic and retroperitoneal anatomy, respiratory and renal physiology —{" "}
+            <span className="font-semibold text-navy-900">all of it gets tested on the block exam</span>. BootCamp
+            Pulmonology ch.1 and Nephrology ch.1 through 6 are not warm-up chapters you skim before getting to the
+            pathology.
+          </p>
+          <p className="text-sm text-slate-700 mt-2">
+            And the bigger reason:{" "}
+            <span className="font-semibold text-navy-900">
+              you do not want to be relearning the embryology, anatomy and physiology of all ten systems during
+              Dedicated.
+            </span>{" "}
+            That is the single worst way to spend those weeks. You learn each system&apos;s foundation once, in the
+            block where it belongs, with the pathology sitting right on top of it — and then in Dedicated you are
+            reviewing, not starting over. Every system you shortcut now is a system you pay for later, at the worst
+            possible exchange rate.
+          </p>
+        </div>
       </div>
 
       {/* Whole block */}
