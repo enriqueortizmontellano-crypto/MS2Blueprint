@@ -824,9 +824,9 @@ function PulmRenal() {
           <h4 className="font-semibold text-rose-800 mb-1 text-sm">The mistake people actually make</h4>
           <p className="text-sm text-rose-900">
             They start the question phase but{" "}
-            <span className="font-semibold">keep doing their full block reviews on top of it</span>. Two hundred
-            cards a day plus two question blocks, and suddenly there are no hours left. That is not discipline, it
-            is the single biggest time sink in the last week.
+            <span className="font-semibold">keep doing their full block reviews on top of it</span>. A thousand
+            cards a day plus two question blocks, days before the test — of course there are no hours left. That is
+            not discipline, it is the single biggest time sink in the last week.
           </p>
           <p className="text-sm text-rose-900 mt-2">
             <span className="font-semibold">Suspend means suspend.</span> Once you hit day 9 you do not touch the
