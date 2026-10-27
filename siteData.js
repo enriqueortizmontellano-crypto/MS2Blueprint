@@ -16,7 +16,7 @@ const NAV_SECTIONS = [
       { id: "ib2", label: "IB2 — Path Escalation + Pharm Escalation", path: "#/block/ib2", status: "ready" },
       { id: "ib3", label: "IB3 — Bacteria, Antibiotics, Antifungals, Mycology", path: "#/block/ib3", status: "ready" },
       { id: "ib4", label: "IB4 — Viruses, Antivirals, Autonomics, Neoplasia", path: "#/block/ib4", status: "ready" },
-      { id: "pulm-renal", label: "Pulmonary + Renal", path: "#/block/pulm-renal", status: "locked" },
+      { id: "pulm-renal", label: "Pulmonary + Renal", path: "#/block/pulm-renal", status: "ready" },
       { id: "cardio", label: "Cardiology", path: "#/block/cardio", status: "locked" },
       { id: "gi", label: "Gastroenterology (GI)", path: "#/block/gi", status: "locked" },
       { id: "endo-repro", label: "Endocrinology + Reproductive", path: "#/block/endo-repro", status: "locked" },
