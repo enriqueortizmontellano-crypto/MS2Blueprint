@@ -675,7 +675,7 @@ function PulmRenal() {
           separate pile.
         </p>
         <a
-          href="https://drive.google.com/drive/folders/1v3-11Z8smjL7m99CMQn8c_E65OEx-CSo?usp=sharing"
+          href="https://drive.google.com/drive/folders/1K46splbtBWIoJ21CRtWyHOnuyk938MvO?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="text-teal-600 underline hover:text-teal-700 text-sm font-semibold"
@@ -700,7 +700,7 @@ function PulmRenal() {
         <ul className="list-disc pl-5 space-y-1 text-sm text-slate-600 mb-3">
           <li>
             <a
-              href="./Mehlman-HY-Pulmonary.pdf"
+              href="./HY%20Pulmonary.pdf"
               target="_blank"
               rel="noreferrer"
               className="text-teal-600 underline hover:text-teal-700"
@@ -710,7 +710,7 @@ function PulmRenal() {
           </li>
           <li>
             <a
-              href="./Mehlman-HY-Renal.pdf"
+              href="./HY%20Renal.pdf"
               target="_blank"
               rel="noreferrer"
               className="text-teal-600 underline hover:text-teal-700"
