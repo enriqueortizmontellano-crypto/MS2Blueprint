@@ -28,6 +28,8 @@ function App() {
     content = <IB3 />;
   } else if (path === "#/block/ib4") {
     content = <IB4 />;
+  } else if (path === "#/block/pulm-renal") {
+    content = <PulmRenal />;
   } else if (path.startsWith("#/block/")) {
     content = <BlockPage blockId={path.replace("#/block/", "")} />;
   } else {
