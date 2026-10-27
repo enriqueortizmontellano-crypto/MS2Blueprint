@@ -801,6 +801,21 @@ function IB4() {
             <span className="text-xs text-slate-500">— covers every block, import once</span>
           </li>
         </ul>
+        <div className="pt-3 border-t border-slate-200">
+          <h4 className="font-semibold text-navy-800 mb-1 text-sm">More IB4 resources — Drive folder</h4>
+          <p className="text-sm text-slate-600 mb-2">
+            The pharmacology study guide, the read-before-the-exam guide, and the NBME practice sets live here —
+            they were too large to host in the repo.
+          </p>
+          <a
+            href="https://drive.google.com/drive/folders/1v3-11Z8smjL7m99CMQn8c_E65OEx-CSo?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            className="text-teal-600 underline hover:text-teal-700 text-sm font-semibold"
+          >
+            Open the IB4 resources folder
+          </a>
+        </div>
       </Collapsible>
 
       {/* Checklist */}
